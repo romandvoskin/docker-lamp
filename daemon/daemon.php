@@ -8,7 +8,7 @@ function run() {
 }
 
 function printData($conn){
-	$query = 'SELECT * From Person';
+	$query = 'SELECT * FROM Person';
 	$result = mysqli_query($conn, $query);
 	while ($value = $result->fetch_array(MYSQLI_ASSOC)) {
 		foreach ($value as $element) {

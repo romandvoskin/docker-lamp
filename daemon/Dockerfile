@@ -3,5 +3,5 @@ RUN mkdir -p /daemon
 COPY . /daemon
 WORKDIR /daemon
 RUN chmod -R +r ./daemon.php
-RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
+RUN docker-php-ext-install mysqli
 CMD  php daemon.php
