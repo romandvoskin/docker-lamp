@@ -1,0 +1,2 @@
+[18-Dec-2018 14:54:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/dynatrace/agent/lib64/libdtagent.so' - Error loading shared library /opt/dynatrace/agent/lib64/libdtagent.so: No such file or directory in Unknown on line 0
+[18-Dec-2018 14:58:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/dynatrace/agent/lib64/libdtagent.so' - Error loading shared library /opt/dynatrace/agent/lib64/libdtagent.so: No such file or directory in Unknown on line 0
