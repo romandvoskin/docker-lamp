@@ -3,4 +3,4 @@ RUN mkdir -p /daemon
 COPY . /daemon
 WORKDIR /daemon
 ENTRYPOINT ["php"]
-CMD ["deamon.php"]
+CMD ["daemon.php"]
