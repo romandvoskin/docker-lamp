@@ -1,4 +1,4 @@
-FROM php:5.6.39-fpm-alpine
+FROM php:7.0
 RUN mkdir -p /daemon
 COPY . /daemon
 WORKDIR /daemon
@@ -8,4 +8,5 @@ RUN mkdir /var/log/roman
 RUN touch /var/log/roman/daemon.log
 RUN chmod 700 /var/log/roman/daemon.log
 COPY ./php.ini /usr/local/etc/php
-ENTRYPOINT ["php", "daemon.php"]
+ENTRYPOINT ["php"]
+CMD ["daemon.php"]
