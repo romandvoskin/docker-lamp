@@ -1,13 +1,16 @@
 version: "2"
 services:
     daemon:
-        build: ./daemon
+        build:
+          context: ./daemon
         links:
             - db
         networks:
             - default
         volumes:
           - /var/log:/var/log
+        depends_on:
+          - db
     www:
         build: .
         ports: 
@@ -18,6 +21,8 @@ services:
             - db
         networks:
             - default
+        depends_on:
+          - db
     db:
         image: mysql:5.7
         ports: 
