@@ -1,4 +1,4 @@
-FROM php:7.0
+FROM php:7.1.2-apache
 RUN mkdir -p /daemon
 COPY . /daemon
 WORKDIR /daemon
