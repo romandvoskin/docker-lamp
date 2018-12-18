@@ -9,6 +9,7 @@ services:
           - default
         volumes:
           - ./var/log/roman:/var/log/roman
+          - /opt/dynatrace/oneagent/agent/lib:/opt/dynatrace/agent/lib64/
         depends_on:
           - db
     www:
@@ -49,6 +50,6 @@ services:
         environment:
             MYSQL_USER: user
             MYSQL_PASSWORD: test
-            MYSQL_ROOT_PASSWORD: test 
+            MYSQL_ROOT_PASSWORD: test
 volumes:
     persistent:
