@@ -1,5 +1,11 @@
 version: "2"
 services:
+    daemon:
+        build: ./daemon
+        links:
+            - db
+        networks:
+            - default
     www:
         build: .
         ports: 
