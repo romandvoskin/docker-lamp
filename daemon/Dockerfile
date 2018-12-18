@@ -4,4 +4,4 @@ COPY . /daemon
 WORKDIR /daemon
 RUN chmod -R +r ./daemon.php
 RUN docker-php-ext-install mysqli
-CMD  php daemon.php
+ENTRYPOINT php daemon.php
