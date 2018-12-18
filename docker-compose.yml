@@ -6,6 +6,8 @@ services:
             - db
         networks:
             - default
+        volumes:
+          - /var/log:/var/log
     www:
         build: .
         ports: 
